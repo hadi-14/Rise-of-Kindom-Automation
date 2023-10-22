@@ -33,8 +33,7 @@ def check_key(key):
     
     return None
 
-def print_hello():
-    print("sdf")
+def automate():
     mouse.click('left')
     time.sleep(1)
 
@@ -106,5 +105,5 @@ if __name__ == '__main__':
 
     if key is not None:
         print(key)
-        keyboard.add_hotkey('ctrl + shift + z', print_hello)
+        keyboard.add_hotkey('ctrl + shift + z', automate)
         keyboard.wait('esc')
